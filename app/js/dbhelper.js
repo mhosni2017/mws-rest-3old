@@ -225,10 +225,10 @@ class DBHelper {
     let url;
     let method;
     let body;
-    //const dbPromise = idb.open("fm-udacity-restaurant");
+    const dbPromise = idb.open("restaurants");
     dbPromise.then(db => {
       if (!db.objectStoreNames.length) {
-        console.log("DB not available");
+        console.log("DB error");
         db.close();
         return;
       }
