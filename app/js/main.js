@@ -151,8 +151,8 @@ createRestaurantHTML = (restaurant, tabIndexno) => {
   image.className = 'restaurant-img';
   const imgurlbase = DBHelper.imageUrlForRestaurant(restaurant);
   const imgparts = imgurlbase.split('.') ;
-  const imgurl1x = imgparts[0]+'_1x.'+imgparts[1];
-  const imgurl2x = imgparts[0]+'_2x.'+imgparts[1];
+  const imgurl1x = imgparts[0]+'_1x.jpg';/*+imgparts[1];*/
+  const imgurl2x = imgparts[0]+'_2x.jpg';/*+imgparts[1];*/
   image.src = imgurl1x;
   console.log(imgurl1x);
   console.log(imgurl2x);
